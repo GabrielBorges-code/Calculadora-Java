@@ -171,6 +171,11 @@ public class Calculator extends javax.swing.JFrame {
 
         jBtnPorcent.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jBtnPorcent.setText("%");
+        jBtnPorcent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnPorcentActionPerformed(evt);
+            }
+        });
 
         jBtnPlusMinus.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jBtnPlusMinus.setText("+ / -");
@@ -182,6 +187,11 @@ public class Calculator extends javax.swing.JFrame {
 
         jBtnClear.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jBtnClear.setText("C");
+        jBtnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnClearActionPerformed(evt);
+            }
+        });
 
         jBtnDot.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jBtnDot.setText(",");
@@ -386,6 +396,21 @@ public class Calculator extends javax.swing.JFrame {
         jTxtDisplay.setText(String.valueOf(ops));
     }//GEN-LAST:event_jBtnPlusMinusActionPerformed
 
+   
+    private void jBtnPorcentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPorcentActionPerformed
+         //porcent
+        firstNumber = Double.parseDouble(jTxtDisplay.getText());
+        jTxtDisplay.setText(" ");
+        operations = "%";
+        
+    }//GEN-LAST:event_jBtnPorcentActionPerformed
+
+    
+     //Clean
+    private void jBtnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnClearActionPerformed
+        jTxtDisplay.setText(" ");
+    }//GEN-LAST:event_jBtnClearActionPerformed
+
     //Equals
     private void jBtnEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEqualsActionPerformed
         String answer;
@@ -412,11 +437,15 @@ public class Calculator extends javax.swing.JFrame {
                 answer = String.format("%.0f", result);
                 jTxtDisplay.setText(answer);
                 break;
+            case "%":
+                result = (firstNumber*secondNumber)/100;
+                answer = String.format("%.0f", result);
+                jTxtDisplay.setText(answer);
+                break;
             default:
                 jTxtDisplay.setText("[Erro]Inválido");
                 break;
         }
-        
     }//GEN-LAST:event_jBtnEqualsActionPerformed
 
     /**
