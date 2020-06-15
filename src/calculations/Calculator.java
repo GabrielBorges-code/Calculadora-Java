@@ -398,9 +398,8 @@ public class Calculator extends javax.swing.JFrame {
         jTxtDisplay.setText(String.valueOf(ops));
     }//GEN-LAST:event_jBtnPlusMinusActionPerformed
 
-   
+   //Porcent
     private void jBtnPorcentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPorcentActionPerformed
-         //porcent
         firstNumber = Double.parseDouble(jTxtDisplay.getText());
         jTxtDisplay.setText(" ");
         operations = "%";
