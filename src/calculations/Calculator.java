@@ -194,7 +194,7 @@ public class Calculator extends javax.swing.JFrame {
         });
 
         jBtnDot.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        jBtnDot.setText(",");
+        jBtnDot.setText(".");
         jBtnDot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnDotActionPerformed(evt);
@@ -387,6 +387,8 @@ public class Calculator extends javax.swing.JFrame {
     private void jBtnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnDotActionPerformed
         String enterNumber = jTxtDisplay.getText() + jBtnDot.getText();
         jTxtDisplay.setText(enterNumber);
+        
+        //jTxtDisplay.setText(".");
     }//GEN-LAST:event_jBtnDotActionPerformed
 
     //Negative number +/-
