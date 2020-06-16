@@ -1,3 +1,7 @@
 # Calculadora Java
 
-Projeto criado para treinar programação. Essa é uma calculadora básica que faz as principais operações matemáticas.
+Esse Calculadora foi criada com o objetivo de treinar programação. 
+Essa é uma calculadora básica que executa as principais operações aritméticas. 
+Para a criação das telas foi utilizado JFrame do Java.
+
+

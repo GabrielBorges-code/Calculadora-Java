@@ -420,27 +420,27 @@ public class Calculator extends javax.swing.JFrame {
         switch (operations) {
             case "+":
                 result = firstNumber + secondNumber;
-                answer = String.format("%.0f", result);
+                answer = String.format("%.1f", result);
                 jTxtDisplay.setText(answer);
                 break;
             case "-":
                 result = firstNumber - secondNumber;
-                answer = String.format("%.0f", result);
+                answer = String.format("%.1f", result);
                 jTxtDisplay.setText(answer);
                 break;
             case "*":
                 result = firstNumber * secondNumber;
-                answer = String.format("%.0f", result);
+                answer = String.format("%.1f", result);
                 jTxtDisplay.setText(answer);
                 break;
             case "/":
                 result = firstNumber / secondNumber;
-                answer = String.format("%.0f", result);
+                answer = String.format("%.1f", result);
                 jTxtDisplay.setText(answer);
                 break;
             case "%":
                 result = (firstNumber*secondNumber)/100;
-                answer = String.format("%.0f", result);
+                answer = String.format("%.1f", result);
                 jTxtDisplay.setText(answer);
                 break;
             default:
