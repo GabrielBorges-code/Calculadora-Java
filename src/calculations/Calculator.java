@@ -54,7 +54,7 @@ public class Calculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTxtDisplay.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        jTxtDisplay.setFont(new java.awt.Font("Ubuntu", 1, 32)); // NOI18N
         jTxtDisplay.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jBtn0.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
